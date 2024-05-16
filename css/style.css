@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     font-family: "Noto Sans TC"   
 }
 .container {
@@ -147,6 +147,7 @@
 }
 .number a:active {
     background-color: #1e1e1e;
+    border-radius: 4px;
     color: #fff;
 }
 @media screen and (max-width:992px){
