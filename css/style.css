@@ -1,59 +1,30 @@
 * {
-    /* outline: 1px solid black; */
+    outline: 1px solid red;
     font-family: "Noto Sans TC", sans-seri;    
 }
-
-body a {
-    text-decoration: none;
-}
-
-
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.container ul {
-    display: flex;
-    margin-top: 12px;
-    
-}
-.container li {   
-    display: block; 
-    margin: 10px;
-}
-.container a {
-    display: block;
-    padding: 10px;
-}
-.container-item {
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 1296px;    
+    max-width: 1920px;
 }
-.container-item h5 {
-    color: #3B3B3B;
+.nevbar {
+    max-width: 1920px;
 }
-.card {
-    width: 636px;
-    height: 538px;
-    border: 1px solid #F1F1F1;
+.logo img{
+    width: 90px;
+    height: 40px;    
 }
-.card-title {
-    font-size: 28px;
-    
+.logo {
+    margin-left: 312px;
+    margin-right: 318px;
 }
-.card-text {
-    font-size: 16px;
-    color: #919191;
+.nav-item {
+    margin-left: 40px;
 }
-span a {
-    background-color: #F1F1F1;
-    color: #3B3B3B;
-    padding: 4px 12px;
-    margin-right: 16px;
-    border-radius: 16px;
-    text-decoration: 1px solid #444;
+@media screen and (max-width: 1270px) {
+    .logo {
+        margin-left: 0px;
+    }
+    .nav-item {
+        text-align: center;
+    }
 }
