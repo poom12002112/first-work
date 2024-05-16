@@ -6,6 +6,7 @@
     margin: 0 auto;
     max-width: 1920px;
 }
+/* navbar */
 .nevbar {
     max-width: 1920px;
     border-bottom: 1px solid #f1f1f1;
@@ -122,6 +123,9 @@
     font-size: 16px;
     color: #3b3b3b;
 
+}
+.item .text {
+    margin-top: 16px;
 }
 .page {
     display: flex;
