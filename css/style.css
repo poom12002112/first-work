@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     font-family: "Noto Sans TC"   
 }
 .container {
@@ -8,7 +8,7 @@
 }
 .nevbar {
     max-width: 1920px;
-    border: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
     background-color: #fff;
 }
 .logo img{
