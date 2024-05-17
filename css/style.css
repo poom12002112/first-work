@@ -34,17 +34,58 @@
 /* 介紹 */
 .banner {
     background-color: #fafafa;
+    padding-top: 80px;
 }
 .slogan {
-    margin: 0 auto;
+    margin: 0 auto;        
     text-align: center;
     padding-top: 80px;
 }
-.slogan h1 {
+.slogan h1{
     font-size: 24px;
-    line-height: 28px;
+    line-height: 28.8px;
+    font-weight: 400;    
     color: #1e1e1e;
     font-family: "Noto Sans TC";
+}
+.slogan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    background-image: url("https://github.com/hexschool/2024-camp/blob/main/src/assets/images/quote-left.png?raw=true");
+}
+.slogan::after {
+    content: "";
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://github.com/hexschool/2024-camp/blob/main/src/assets/images/quote-right.png?raw=true");
+}
+.slogan .focus-bg {
+    background-image: url("https://github.com/hexschool/2024-camp/blob/main/public/images/mark.png?raw=true");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.slogan {
+    margin: 0 auto;    
+    width: 670px;height: 192px;
+    position: relative;    
+}
+@media screen and (max-width:992px) {
+    .slogan {
+        width: 70%;
+        padding-bottom: 40px;        
+    }
+    .slogan::after {
+        display: none;
+    }
+    
+    
 }
 .introduce {
     display: flex;
@@ -160,6 +201,9 @@
     }
     .item {
         margin-bottom: 48px;
+    }
+    .item img {
+        width: 100%;
     }
     
 }
