@@ -1,5 +1,5 @@
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     font-family: "Noto Sans TC"   
 }
 .container {
@@ -328,10 +328,15 @@
         background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
              
     }
+    .connection-logo {
+        padding-left: 115.5px;        
+    }
+    .connection-logo img {
+        width: 120px;height: 54px;
+    }
     .connection {
         margin: 0 auto;
         margin-bottom: 40px;
-        display: block;
         width: 351px;
     }
     .switch {
