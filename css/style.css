@@ -74,18 +74,17 @@
 .slogan {
     margin: 0 auto;    
     width: 670px;height: 192px;
-    position: relative;    
+    position: relative;   
+    margin-bottom: 24px; 
 }
 @media screen and (max-width:992px) {
     .slogan {
         width: 70%;
-        padding-bottom: 40px;        
+        margin-bottom: 40px;       
     }
     .slogan::after {
         display: none;
-    }
-    
-    
+    }   
 }
 .introduce {
     display: flex;
@@ -109,12 +108,11 @@
 }
 @media screen and (max-width:992px) {
     .introduce {
-        flex-wrap: wrap;
+        flex-wrap: wrap;             
     }
     .introduce .text1 {
         margin-bottom: 20px;
-    }
-    
+    }    
 }
 /* 作品集 */
 .portfolio {
@@ -133,6 +131,7 @@
 }
 .item {
     margin-right: 24px;
+    margin-bottom: 80px;
 }
 .item h3 {
     font-size: 28px;
@@ -149,12 +148,12 @@
 .item ul {
     display: flex;
     margin-top: 24px;
+    padding-left: 16px;    
 }
 .item li {
     margin-right: 16px;
     background-color: #f1f1f1;
-    border-radius: 16px;
-    
+    border-radius: 16px;   
 }
 .item a {
     display: block;
@@ -180,17 +179,14 @@
     width: 40px;height: 40px;
     justify-content: center;
     align-items: center;
-
 }
-
 .number a {
     padding: 2px 13px;
     color:#3b3b3b;
     text-decoration: none;
-    font-size: 24px;
-    
+    font-size: 24px;    
 }
-.number a:active {
+.number a:focus {
     background-color: #1e1e1e;
     border-radius: 4px;
     color: #fff;
@@ -201,9 +197,105 @@
     }
     .item {
         margin-bottom: 48px;
+        margin: 0 4px;
     }
     .item img {
         width: 100%;
     }
+    
+}
+/* footer */
+.footer {
+    width: 100%;
+    border-top: 1px solid #fafafa;
+    justify-content: space-between;
+    background-color: #fafafa;
+    background-image: url(https://github.com/hexschool/2024-camp/blob/main/src/assets/images/footer-bg-lg.png?raw=true);
+    /* padding: 80px 312px 80px 312px; */
+    justify-content: space-around;
+    display: flex;
+}
+.connection{
+    margin: 119px 0;
+}
+.connection-logo {
+    margin-bottom: 24px;
+}
+.connection-text {   
+    font-family: "Noto Sans tc";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #3b3b3b;
+    margin-bottom: 24px;
+}
+.switch{
+    margin-top: 80px;
+    height: 264px;
+}
+.email a{
+    text-decoration: none;
+    font-size: 20px;
+    width: 400px;
+    line-height: 24px;
+    color: #919191;
+}
+.switch-item1 {
+    height: 72px;
+    padding: 8px 24px 8px 24px;
+    border-radius: 8px;  
+    background-color: #000; 
+    margin-bottom: 24px;
+}
+.switch-item1 img {
+    width: 56px;height: 56px;
+}
+.switch-item1 a {
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;    
+    text-decoration: none;
+    color: #fff;
+    padding-right: 138px;
+}
+.switch-item {
+    height: 72px;
+    padding: 8px 24px 8px 24px;
+    border-radius: 8px;  
+    background-color: #fff; 
+    margin-bottom: 24px;
+}
+.switch-item img {
+    width: 56px;height: 56px;
+}
+.switch-item a {
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;    
+    text-decoration: none;
+    color: #3b3b3b;    
+}
+@media screen and (max-width:992px) {
+    .footer {
+        display: block;
+        padding: 0;  
+        margin: 0 auto;
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+             
+    }
+    .connection {
+        margin: 0 auto;
+        margin-bottom: 40px;
+        display: block;
+        width: 351px;
+    }
+    .switch {
+        margin: 0 auto;
+        width: 351px;
+    }
+  
     
 }
