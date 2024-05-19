@@ -21,16 +21,42 @@
     margin-right: 318px;
 }
 .nav-item {
-    margin-left: 40px;
+    margin-left: 40px;    
+}
+.nav-link:hover {    
+    background:
+        linear-gradient(to right, black 1px, transparent 1px) 0 0,
+        linear-gradient(to right, black 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, black 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, black 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, black 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, black 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, black 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, black 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+}
+.nav-link:focus {
+    background:
+        linear-gradient(to right, black 1px, transparent 1px) 0 0,
+        linear-gradient(to right, black 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, black 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, black 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, black 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, black 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, black 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, black 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
 }
 @media screen and (max-width: 1270px) {
     .logo {
         margin-left: 0px;
         margin-right: auto;
     }
-    .nav-item {
-        text-align: center;
-    }
+    .nav-item {               
+        text-align: center;               
+    } 
 }
 /* 介紹 */
 .banner {
@@ -201,11 +227,12 @@
         flex-wrap: wrap;
     }
     .item {
-        margin-bottom: 48px;
+        padding-bottom: 48px;
         margin: 0 4px;
     }
     .item img {
         width: 100%;
+        height: auto;
     }
     
 }
