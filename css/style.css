@@ -55,8 +55,12 @@
         margin-right: auto;
     }
     .nav-item {               
-        text-align: center;          
+        text-align: center;  
+        margin-bottom: 24px;               
     } 
+    .nav-link {
+        padding: 4px 8px 4px 8px;
+    }
 }
 @media screen and (max-width: 992px) {
     .nav-item {
