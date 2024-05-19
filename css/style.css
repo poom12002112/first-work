@@ -49,14 +49,20 @@
     background-repeat: no-repeat;
     background-size: 8px 8px;
 }
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1282px) {
     .logo {
         margin-left: 0px;
         margin-right: auto;
     }
     .nav-item {               
-        text-align: center;               
+        text-align: center;          
     } 
+}
+@media screen and (max-width: 992px) {
+    .nav-item {
+        margin: 0 auto;
+    }
+    
 }
 /* 介紹 */
 .banner {
