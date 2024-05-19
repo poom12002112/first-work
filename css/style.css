@@ -26,6 +26,7 @@
 @media screen and (max-width: 1270px) {
     .logo {
         margin-left: 0px;
+        margin-right: auto;
     }
     .nav-item {
         text-align: center;
